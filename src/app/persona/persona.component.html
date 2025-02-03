@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="left">
+    <h2>{{ editMode ? 'Editar Persona' : 'Agregar Persona' }}</h2>
+
+    <form [formGroup]="personaForm" (ngSubmit)="guardarPersona()">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" formControlName="nombre" />
+      </div>
+
+      <div>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" formControlName="edad" />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" />
+      </div>
+
+      <button type="submit" [disabled]="personaForm.invalid">{{ editMode ? 'Actualizar' : 'Agregar' }}</button>
+      <button type="button" (click)="resetFormulario()">Cancelar</button>
+    </form>
+  </div>
+
+  <div class="right">
+    <h3>Listado de Personas</h3>
+    <ul>
+      <li *ngFor="let persona of personas">
+        <span>{{ persona.nombre }} | {{ persona.edad }} | {{ persona.email }}</span>
+        <button (click)="editarPersona(persona)">Editar</button>
+        <button class="btnEliminar" (click)="eliminarPersona(persona.id)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+
+</div>
