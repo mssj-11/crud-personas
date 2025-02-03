@@ -1,6 +1,9 @@
-# Crud Personas
+# CRUD Personas
 
 <p align="center"><img src="web.png" /></p>
+
+### Editar
+<p align="center"><img src="web2.png" /></p>
 
 
 
