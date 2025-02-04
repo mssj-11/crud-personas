@@ -13,9 +13,11 @@
     justify-content: space-between;
 }
 
-.left,
+.left {
+    width: 40%;
+}
 .right {
-    width: 50%;
+    width: 57%;
 }
 
 h2 {
@@ -113,22 +115,22 @@ li span {
     color: #333;
 }
 
-li button {
+.right button {
     background-color: #2196F3;
     padding: 5px 10px;
     margin-left: 10px;
 }
 
-li button:hover {
+.right button:hover {
     background-color: #1976D2;
 }
 
 
-li .btnEliminar {
+.right .btnEliminar {
     background-color: #f44336;
 }
 
-li .btnEliminar:hover {
+.right .btnEliminar:hover {
     background-color: #e53935;
 }
 
