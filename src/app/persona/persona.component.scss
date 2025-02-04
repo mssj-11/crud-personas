@@ -95,24 +95,14 @@ button[type="button"]:hover {
     background-color: #e53935;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+table th {
+    text-align: left;
 }
 
-li {
+tbody tr {
     padding: 10px;
     background-color: #f1f1f1;
-    margin: 5px 0;
     border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-li span {
-    font-size: 16px;
-    color: #333;
 }
 
 .right button {
@@ -124,7 +114,6 @@ li span {
 .right button:hover {
     background-color: #1976D2;
 }
-
 
 .right .btnEliminar {
     background-color: #f44336;
