@@ -26,3 +26,20 @@ npm i selenium-webdriver mocha webdriver-manager
 ```js
 npm run test
 ```
+
+
+### 4.  Instalar dependencias de CUCUMBER
+
+```sh
+npm i @cucumber/cucumber --save-dev
+```
+
+*   Ajustes en el archivo **`package.json`**:
+```js
+"test": "mocha ./test/*.spec.js --no-timeouts",
+"test:cucumber": "cucumber-js"
+```
+*   **Correr TEST**:
+```js
+npm run test:cucumber
+```

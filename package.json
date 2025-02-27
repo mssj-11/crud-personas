@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "mocha ./test/*.spec.js --no-timeouts"
+    "test": "mocha ./test/*.spec.js --no-timeouts",
+    "test:cucumber": "cucumber-js"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,7 @@
     "@angular/cli": "^16.2.16",
     "@angular/compiler-cli": "^16.2.0",
     "@angular/localize": "^16.2.0",
+    "@cucumber/cucumber": "^11.2.0",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
